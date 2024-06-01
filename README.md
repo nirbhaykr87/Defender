@@ -28,10 +28,10 @@ To use Defender effectively, you need:
 
 ## 📖 Usage
 
-1. **Weather Updates**: Visit the home page for real-time weather information.
-2. **Flood News**: Navigate to the news section to read the latest flood-related updates.
-3. **Helpdesk**: Use the helpdesk feature to get assistance during flood emergencies.
-4. **Donate**: Click on the donate button to support flood relief efforts.
+1. **🌦️ Weather Updates**: Visit the home page for real-time weather information.
+2. **📰 Flood News**: Navigate to the news section to read the latest flood-related updates.
+3. **🆘 Helpdesk**: Use the helpdesk feature to get assistance during flood emergencies.
+4. **💰 Donate**: Click on the donate button to support flood relief efforts.
 
 
 
