@@ -43,6 +43,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, please open an issue on the repository or contact the project maintainers.
 
+![author](https://img.shields.io/badge/author-Nirbhay--Kumar-blue)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/nirbhaykrmuj/)
+
 ---
 
 <p align="center">Stay Safe, Stay Informed! 🌈</p>
