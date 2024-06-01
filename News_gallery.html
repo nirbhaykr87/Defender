@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<style>
+ 
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            
+            
+            
+        }
+       
+        nav{
+            background-color: rgba(37, 38, 65, 1);
+
+            height: 80px;    /*60 */
+            width: 100%;
+        }
+        .logo{
+            color: white;
+            font-size: 35px;
+            list-style: 8px;
+            padding:0 100px;
+            display:inline-block;
+            margin-left: -75px;
+            margin-top: -45px;
+
+        }
+        .logo img{
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 77px;
+            margin: 0 5px;
+            transform: translateY(-8px);
+          
+
+        }
+     
+        nav ul li a{
+            border-radius: 3px;
+            color:white;
+            padding: 15px;
+
+  position: relative;
+  font-size: 24px;
+
+
+        }
+    
+       
+       .Donate {
+  background-color: #4CAF50;
+  
+  /* background-color: #F48C06;    */
+ color: #fff;
+ border: none;
+ padding: 10px 38px;
+ border-radius: 25px;
+ font-size: 20px;
+ font-weight:bold;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ transform:translateY(-8px);
+}
+.Donate:hover {
+ background-color: #3e8e41;
+ 
+}
+nav ul li a::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top:40px;
+ bottom: -2px;
+ width: 100%;
+ height: 1px;
+ background-color:white;
+ transform: scaleX(0);
+ transform-origin: left center;
+ transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1.2);
+}
+
+nav ul li a:hover::before {
+ transform: scaleX(1);
+}
+.Donate a{
+   color: #fff;
+}
+footer{
+  height: 200px;
+  margin-top: 90px;
+  background-color: rgba(37, 38, 65, 1);
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+
+
+}
+.logo1{
+            color: white;
+            font-size: 35px;
+            list-style: 8px;
+            padding:0 100px;
+            display:inline-block;
+            margin-left: 440px;
+            margin-top: -27px;
+
+        }
+        .logo1 img{
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+        .section{
+          margin-left: 460px;
+          margin-top: -50px;
+          padding-bottom: 10px;
+          
+        }
+        .vd{
+            margin-top: -100px;
+            /* border: 2px solid red; */
+            height: 350px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .text{
+            font-size: 60px;
+  /* margin-top: -12px;
+   */
+   transform: translate(25px,-217px);
+   
+   
+    font-family: 'Baloo 2', cursive;
+
+
+text-shadow: 2px 2px 4px rgba(8, 233, 83, 0.6);
+color: rgb(193, 184, 184);
+
+
+        }
+        .miniheader{
+         
+            width: 100%;
+            height: 65px;
+            margin-top: -95px;
+        }
+       
+     .news1{
+        height: 380px;
+        width: 700px;
+/* border: 2px solid red; */
+margin-left:85px ;
+background-image: url('news_banner.jpg');
+background-size: cover;
+border-radius:8px ;
+display: inline-block;
+     }
+.news_main
+{
+    background-color: #E6E7E8;
+    padding-top: 40px;
+}     
+.news2{
+    border: 2px solid red;
+    display: inline;
+    float: right;
+    height: 120px;
+    height: 375px;
+    width: 320px;
+    margin-right: 85px;
+    border-radius: 10px;
+    background-color: black;
+} 
+.news_main2{
+    background-color:#E6E7E8 ;
+    /* border: 2px solid red; */
+    padding-top: 30px;
+    height: 470px;
+}
+.category{
+    /* border: 2px solid blue; */
+    background-color: #fff;
+display: inline-block;
+border-radius:5px ;
+margin-left: 85px;
+width: 200px;
+
+}
+.category ul {
+    padding: 20px;
+    line-height: 40px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #9CA3AF;
+    cursor: pointer;
+
+}
+.category ul li:hover{
+    color: black;
+}
+.category_news{
+    /* border: 2px solid greenyellow; */
+    float: right;
+    margin-right: 85px;
+    width: 850px;
+    border-radius: 10px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="Defender_logo.png">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wheather.html">Weather</a></li>
+            <li><a href="News_gallery.html">News Gallery</a></li>
+            <li><a href="support_center.html">Support Center</a></li>
+        <button  class="Donate"><a href="Donation.html"  target="_blank">Donate</a></button>
+        
+        </ul>
+    </nav>
+   
+        
+    
+      <div class="vd">
+    <video src="images/Untitled (Facebook Cover) (2000 × 624 px).mp4" preload="" autoplay="" muted=""  loop="4s" width="100%"   ></video>
+    
+</div>
+<div class="text">
+   News Gallery
+</div>
+
+
+<div class="miniheader">
+          
+            <h3 style="font-weight: bold; font-family:'Baloo Bhai 2', cursive; background-color: black;color: #fff;display: inline-block; border-radius: 4px;padding: 4px 6px;margin-left: 85px;margin-top: 12px;">Flash news</h3>
+            <span style="font-weight: 500; padding-left: 12px;"> Flood Warning Issued for Local Area as Heavy Rainfall Expected to Cause Dangerous Conditions</span>
+            <span style="color: #D1011C; font-weight: bold; font-size: 18px; margin-left: 95px;">Wed, April 13,2023  &nbsp;30°C,Jaipur </span>
+</div>
+
+<div class="news_main">
+
+    <div class="news1">
+<p style=" color: white;border-radius: 3px;display: inline-block;margin-top: 190px; margin-left: 30px;padding: 1px;">global news  </p>
+<p style="color: white; margin-left: 30px;margin-top: 0; font-size: 32px;"> <a href="" style="color: white;"> GLOBAL PANDEMIC <br>
+    Coronavirus Outbreak LIVE Updates: ICSE, <br>  CBSE Exams Postponed, 168 Trains</a></p>
+    <small style="color: white;margin-left: 30px;">Photo 10 Minute ago</small>
+    </div>
+    <div class="news2">
+<div style="color: white;font-weight: bold; font-size: 20px; font-family: 'Baloo Bhai 2', cursive;margin-left: 35px;margin-top: 30px;">Latest news</div>
+<div style="color: white;margin-left: 35px;font-family: 'Baloo Bhai 2', cursive; margin-top: 12px;" >Virus kills Member of <br> Advising Iran's Supreme  <img src="https://www.bootstrapdash.com/demo/world-time/assets/images/dashboard/home_1.jpg" alt="" height="70px" width="70px" style="float: right;margin-right: 12px;margin-top: -39px;"></div> <br>
+<hr >
+<div style="color: white;margin-left: 35px;font-family: 'Baloo Bhai 2', cursive; margin-top: 40px;" >Virus kills Member of <br> Advising Iran's Supreme  <img src="https://www.bootstrapdash.com/demo/world-time/assets/images/dashboard/home_2.jpg" alt="" height="70px" width="70px" style="float: right;margin-right: 12px;margin-top: -39px;"></div> <br> <hr>
+<div style="color: white;margin-left: 35px;font-family: 'Baloo Bhai 2', cursive; margin-top: 40px;" >Virus kills Member of <br> Advising Iran's Supreme  <img src="https://www.bootstrapdash.com/demo/world-time/assets/images/dashboard/home_2.jpg" alt="" height="70px" width="70px" style="float: right;margin-right: 12px;margin-top: -39px;"></div>
+    </div>
+
+    
+</div>
+
+
+<div class="news_main2">
+    <div class="category">
+        <h2 style="margin-left: 15px; font-size: 30px;font-family: 'Baloo Bhai 2', cursive;">Category</h2>
+        <ul>
+            <li>Politics</li>
+            <li>International</li>
+            <li>Finance</li>
+            <li>Healthcare</li>
+            <li>Technology</li>
+            <li>Jobs</li>
+            <li>Media</li>
+            <li>Sports</li>
+        </ul>
+    </div>
+    <div class="category_news">
+        <iframe width="260" height="135" src="https://www.youtube.com/embed/ESI8hoErZL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div style="padding: 12px;margin-top: 12px;display: inline-;width:500px;float: right;margin-right: 32px;">  <strong style="font-size: 20px;"> COVID News Today COVID Cases In India Delhi Reports 980 COVID Cases  English News</strong>
+      <p style="margin-top: 12px;font-size: 15x;">Delhi reports 980 #COVID cases and 2 deaths in the last 24 hours, positivity rate stands at 25.98% </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/96gi1XyrbyY?si=E1P7Lhjf8IdrPkSr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+        <iframe width="260" height="135" src="https://www.youtube.com/embed/96gi1XyrbyY?si=SjcuXOToCND6a708" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div style="padding: 12px;margin-top: 12px;display: inline-; width:500px;float: right;margin-right: 32px;">  <strong style="font-size: 20px;"> COVID News Today COVID Cases In India Delhi Reports 980 COVID Cases  English News</strong>
+        <p style="margin-top: 12px;font-size: 15x;">Delhi reports 980 #COVID cases and 2 deaths in the last 24 hours, positivity rate stands at 25.98% </div>
+            <iframe width="260" height="135" src="https://www.youtube.com/embed/ESI8hoErZL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div style="padding: 12px;margin-top: 12px;display: inline-; width:500px;float: right;margin-right: 32px;">  <strong style="font-size: 20px;"> COVID News Today COVID Cases In India Delhi Reports 980 COVID Cases  English News</strong>
+            <p style="margin-top: 12px;font-size: 15x;">Delhi reports 980 #COVID cases and 2 deaths in the last 24 hours, positivity rate stands at 25.98% </div>
+          </div>
+      </div>
+
+      
+    </div>
+
+    
+</div>
+
+
+
+    <!-- foote -->
+    
+<footer>
+  
+    <div class="logo1">
+      <img  style="align-items: center;" src="Defender_logo.png">
+  </div>
+  <div class="section">
+   <a href="About_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">About Us &nbsp;&nbsp;|</a>
+  <a href="connect_with_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Helpdesk&nbsp;&nbsp;|</a>
+  <a href="#" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Terms & Conditions</a>
+  </div>
+  <small style="color: #9CA3AF;margin-left:520px ; padding-top: 50px;" > &copy;2023 Defender. All rights reserved</small>
+  
+  <p style="color:white ; font-size: 18px ;word-spacing: 2px; margin-left: 440px;margin-top: 20px;margin-bottom: 15px;">Website developed by Nirbhay ,Ashutosh & Yash</p>
+  
+  </footer>
+  
+
+</body>
+</html>

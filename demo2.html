@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        .container input {
+
+            width: 270px;
+            height: 20px;
+            margin-top: 1px;
+             margin-bottom: 9px;
+        }
+        form {
+            padding-left: 20px;
+        }
+        .formerror {
+            color: red;
+            padding-top: 2px;
+        }
+        #but {
+
+            color: white;
+            background-color: #2F58CD;
+            width: 280px;
+            border-radius: 3px;
+            border: none;
+            height: 35px;
+            font-family: 'Baloo 2', cursive;
+            margin-top: 27px;
+        }
+        .container {
+            border: 2px solid rgb(233, 229, 229);
+            background-color: whitesmoke;
+            height: 600px;
+            width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+            border-radius: 8px;
+            font-family: 'Baloo 2', cursive;
+        }
+        h2 {
+            font-family: 'Baloo 2', cursive;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formdesign" id="name">
+                First Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            </div>
+            <div class="formdesign" id="lname">
+                Last Name: <input type="text" name="lname" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+                Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="phone">
+                Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+                Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="address">
+                Address<input type="text" name="address" required><b><span class="formerror"></span></b>
+            </div>
+
+            <input id="but" type="submit" value="Register Now">
+
+        </form>
+    </div>
+</body>
+<script>
+    function clearErrors() {
+
+        errors = document.getElementsByClassName('formerror');
+        for (let item of errors) {
+            item.innerHTML = "";
+        }
+    }
+    function seterror(id, error) {
+        element = document.getElementById(id);
+        element.getElementsByClassName('formerror')[0].innerHTML = error;
+        element.getElementsByClassName('formerror')[0].style.fontSize = "12px";
+        element.getElementsByClassName('formerror')[0].style.paddingTop = "3px";
+
+    }
+
+    function validateForm() {
+        var returnval = true;
+        clearErrors();
+
+        var name = document.forms['myForm']["fname"].value;
+        var letters = /^[A-Za-z]+$/;
+        var uppercaseRegex = /[A-Z]/;
+        var specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+        var digitRegex = /\d/;
+
+        if (name.length < 5) {
+            seterror("name", "*Length of name is too short");
+            returnval = false;
+        }
+
+        if (name == letters) {
+            seterror("name", "*Name should contains only alphabet");
+            returnval = false;
+        }
+        
+        var phone = document.forms['myForm']["fphone"].value;
+        if (phone.length != 10) {
+            seterror("phone", "*Phone number should be of 10 digits!");
+            returnval = false;
+        }
+
+        var password = document.forms['myForm']["fpass"].value;
+
+        if (password.length < 8 && password.search(uppercaseRegex) && password.search(specialCharRegex) && password.search(digitRegex)) {
+
+            seterror("pass", "*Password should be atleast 8 characters long and contain atleast one uppercase,special symbol and digit");
+            returnval = false;
+        }
+
+        return returnval;
+    }
+
+    
+</script>
+</html>

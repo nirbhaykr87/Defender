@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+
+
+        }
+     
+          /* yeha se Nav Bar  ka styling start hain*/
+
+        nav {
+            background-color: rgba(37, 38, 65, 1);  
+
+            height: 80px;
+            
+            width: 100%;
+        }
+
+        .logo {
+            color: white;
+            font-size: 35px;
+          
+            padding: 0 100px;
+            display: inline-block;
+            margin-left: -75px;
+            margin-top: -45px;
+
+        }
+
+        .logo img {
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 5px;
+            transform: translateY(-8px);
+
+
+        }
+
+        nav ul li a {
+            /* border-radius: 3px; */
+            color: white;
+            padding: 15px;
+
+            position: relative;
+            font-size: 24px;
+
+
+        }
+
+        
+
+        .Donate {
+            background-color: #3e8e41;
+
+
+            
+            color: #fff;
+            border: none;
+            padding: 10px 38px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            transform: translateY(-8px);
+        }
+
+        .Donate:hover {
+            background-color: #3e8e41;
+
+        }
+
+
+        
+           /* nav bar me hover karne par jo niche line type aayega uske liye  */
+
+
+
+         nav ul li a::before {
+        content: "";
+            position: absolute;
+            left: 0;
+            top: 40px;
+            bottom: -2px;
+            width: 100%;
+            height: 1px;
+            background-color: white; 
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1.2);
+        } 
+
+        nav ul li a:hover::before {
+            transform: scaleX(1);
+        }
+       
+
+        .Donate a {
+            color: #fff;
+        }
+
+        footer {
+            height: 200px;
+            margin-top: 90px;
+            background-color: rgba(37, 38, 65, 1);
+            font-family: 'Montserrat', sans-serif;
+            padding-bottom: 10px;
+
+        }
+
+        .logo1 {
+            color: white;
+            font-size: 35px;
+            list-style: 8px;
+            padding: 0 100px;
+            display: inline-block;
+            margin-left: 440px;
+            margin-top: -27px;
+
+        }
+
+        .logo1 img {
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+
+        .section {
+            margin-left: 460px;
+            margin-top: -50px;
+            padding-bottom: 10px;
+
+        }
+
+        .headerimg {
+
+            width: 100%;
+            height: 430px;
+            background-image: url("flood img.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .overlay {
+            position: absolute;
+            /* Set the position of the overlay to absolute */
+            /* top: 30; */
+            left: 0;
+            width: 100%;
+            height: 75%;
+            background-color: rgba(255, 255, 255, 0.5);
+
+        }
+
+        span {
+            font-size: 58px;
+            text-align: left;
+
+            position: relative;
+            top: 200px;
+            left: 40px;
+            font-family: 'Baloo 2', cursive;
+            font-family: 'Baloo Bhai 2', cursive;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: rgb(46, 44, 44);
+        }
+
+
+
+
+
+
+
+        .instruction1 {
+            font-size: 17px;
+            margin-left: 60px;
+            font-family: 'Times New Roman', Times, serif;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .tips {
+            background-color: aliceblue;
+           
+
+            width: 100%;
+        }
+
+        .instruction1 img {
+            padding-right: 10px;
+
+        }
+
+        .content_galleryrow1 {
+            margin-top: 30px;
+            
+        }
+.contentmain{
+    
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  padding-bottom: 30px;
+  margin-left: 40px;
+
+ 
+
+}
+
+
+
+
+
+        .content {
+            text-align: center;
+            /* border-top: 2px dashed #171338; */
+            /* border-bottom: 2px dashed #171338; */
+            color: rgb(39, 139, 114);
+            width: 100%;
+            font-size: 40px;
+            padding-bottom: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+
+        .content_galleryrow2 {
+            margin-top: 30px;
+          
+
+        }
+
+        .flood_prone {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: underline;
+            margin-left: 15px;
+            margin-top: -10px;
+            /* background-color: rgba(18, 231, 146, 0.1) */
+
+        }
+
+        .floodpronetext {
+            margin-left: 65px;
+            padding-top: 8px;
+            text-shadow: 0px 0px 1px rgba(11, 133, 232, 0.644);
+        }
+
+        .details {
+            padding-left: 20px;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        .details summary {
+            color: brown;
+        }
+
+        .table {
+            margin: auto;
+            text-align: center;
+
+
+        }
+
+        .table2 {
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .safety_measures {
+           
+            display: inline-block;
+            
+
+            height: 204px;
+            width: 320px;
+           
+            margin-left: 55px;
+           
+           
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #F9F3EE;
+
+
+        }
+
+        .safety_measures a {
+            padding-left: 15px;
+            font-size: 22px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+
+
+        }
+
+        .safety_measures a:hover {
+            color: #d91d10;
+            text-decoration: underline;
+        }
+        .safety_measures:hover img{
+            transform:rotate3d(1,1,1,45deg);
+            transition: 1s;
+        }
+        
+    
+
+
+        .helpline_support {
+         
+            display: inline-block;
+            padding: 11px;
+               
+           
+            margin-left: 50px;
+            width: 320px;
+            background-color: #DEF5E5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        .helpline_support a {
+            font-size: 22px;
+          
+            font-family: 'Montserrat', sans-serif;
+
+            color: #000000;
+
+        }
+
+        .helpline_support a:hover {
+            color: rgb(76, 121, 205);
+            text-decoration: underline;
+        }.helpline_support:hover img{
+            transform: scale(1.3);
+            transition: 1s;
+        }
+
+
+        .flood_alert {
+
+            font-family: Arial, Helvetica, sans-serif;
+            
+            display: inline-block;
+           
+            margin-left: 48px;
+            
+            padding: 0px 57px 10px;
+           
+           
+            width: 190px;
+            background-color:#FFE6F7;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+        .flood_alert:hover img{
+            transform: rotate(360deg);
+            transition: 4s;
+        }
+
+        .flood_alert a {
+            font-size: 22px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+            padding-left: 29px;
+            color: #000000;
+
+        }
+
+        .flood_alert a:hover {
+            color: #ff5500;
+            text-decoration: underline;
+        }
+
+        .flood_risk_map {
+
+           
+            display: inline-block;
+            
+            margin-left: 50px;
+            padding: 10px 50px 11px 59px;
+          
+           
+            width: 215px;
+           
+            background-color: #ECF9FF;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+        .flood_risk_map:hover img{
+            transform: scale(1.2)  ;
+            transition: 1s;
+              }
+
+        .flood_risk_map a {
+            font-size: 22px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+            padding-left: 25px;
+
+        }
+
+        .flood_risk_map a:hover {
+
+            color: black;
+            text-decoration: underline;
+
+        }
+
+        .most_disaster {
+           
+            display: inline-block;
+            padding: 8px;
+            margin-left: 50px;
+            width: 320px;
+            background-color: #ECF9FF;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        .most_disaster a {
+
+            font-size: 22px;
+            /* font-family: Arial, Helvetica, sans-serif;
+         */
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .most_disaster a:hover {
+
+            color: #10A19D;
+            text-decoration: underline;
+
+
+
+        }
+        .most_disaster:hover img{
+            
+            transform: rotate(360deg);
+           
+           
+            transition: 4s;
+            
+          
+        }
+
+        .why_flood {
+             /* border: 2px solid#000000; */
+            display: inline-block;
+            height: 204px;
+            width: 320px;
+            margin-left: 55px;
+          
+          
+          
+            margin-top: 25px;
+            width: 300px;
+  background-color: #FDEBED;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+        }
+
+        .why_flood a {
+
+            font-size: 22px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Montserrat', sans-serif;
+
+            /* margin-left: 50px; */
+            color: #000000;
+            padding-left: 70px;
+        }
+
+        .why_flood a:hover {
+
+            color: rgb(17, 111, 78);
+            text-decoration: underline;
+        }
+        .why_flood:hover img{
+            transform: scale(1.2);
+            transition: 1s;
+        }
+
+
+        summary {
+            font-size: 20px;
+        }
+
+        .emergencykit ul li {
+            list-style-type: square;
+        }
+        .latest_news{
+            font-size: 30px;
+            font-weight:bolder;
+            font-family: 'Baloo Bhai 2', cursive;
+           
+            color:  #2F327D;
+margin-left: 440px;
+
+        }
+        .spa{
+
+font-size: 18px;
+    margin-left: 305px;
+    font-weight: bold;
+}
+.grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: auto;
+    
+      }
+      .featured-box {
+        grid-column: 1 / 4;
+        /* background-color: #f0f0f0; */
+        padding: 5px;
+        width: 560px;
+        grid-row: 1 / 5; /* Change the value to make it longer */
+        
+        
+      }
+      .blog-box {
+        /* background-color: #e0e0e0; */
+        padding: 5px;
+        margin-left: -235px;
+        width: 350px;
+    
+        padding-top: 12px;
+      }  
+      .gridd{
+        margin-left: 130px;
+        margin-top: 25px;
+      }  
+
+         
+
+  
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">
+            <img src="Defender_logo.png">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weather.html">Weather</a></li>
+            <li><a href="News_gallery.html">News Gallery</a></li>
+            <li><a href="support_center.html">Support Center</a></li>
+            <button class="Donate"><a href="Donation.html" target="_blank">Donate</a></button>
+
+        </ul>
+    </nav>
+
+
+    <!-- index content -->
+
+    <div class="headerimg">
+        <div class="overlay"></div>
+        <span class="sp">Flood management</span>
+
+
+    </div>
+
+
+
+
+    <h3
+        style="font-size: 35px; font-weight: bold;margin-left: 40px;text-decoration:underline;color:#000000B3; margin-top: 12px; ">
+        Some
+        safety measures :-</h3>
+    <div class="tips">
+        <ul>
+            <li style="padding-top: 30px; padding-left: 35px;"> <strong style="font-size:20px;"> If you are under a
+                    flood warning:</strong> </li>
+        </ul>
+
+        <img src="instruction1.png"
+            style="display:block;margin-left:auto;margin-right:auto;width:400px;height:350px;" />
+
+        <ul class="instruction1">
+            <li> <img src="dot.png" style="height: 18px;">Find safe shelter right away. </li>
+            <li><img src="dot.png" style="height: 18px;"> Do not walk, swim or drive through flood waters. Turn Around,
+                Don’t Drown!</li>
+            <li> <img src="dot.png" style="height: 18px;">Remember, just six inches of moving water can knock you down,
+                and one foot of moving water can sweep
+                your vehicle away.</li>
+            <li><img src="dot.png" style="height: 18px;">Stay off bridges over fast-moving water.</li>
+            <li><img src="dot.png" style="height: 18px;">Depending on the type of flooding:</li>
+        </ul>
+        <!-- </div>
+
+<div class="tips"> -->
+        <ul>
+            <li style="padding-top: 30px; padding-left: 35px;"><strong style="font-size:20px;">Staying Safe During a
+                    Flood</strong>
+            </li>
+        </ul>
+
+        <img src="instruction2.png"
+            style="display:block;margin-left:auto;margin-right:auto;width:400px;height:350px;" />
+
+        <ul class="instruction1">
+            <li><img src="dot.png" style="height: 18px;">Evacuate immediately, if told to evacuate. Never drive around
+                barricades. Local responders use them to
+                safely direct traffic out of flooded areas.</li>
+            <li><img src="dot.png" style="height: 18px;">Contact your healthcare provider If you are sick and need
+                medical attention. Wait for further care
+                instructions and shelter in place, if possible.
+            </li>
+            <li><img src="dot.png" style="height: 18px;">Listen to EAS, NOAA Weather Radio or local alerting systems for
+                current emergency information and
+                instructions regarding flooding</li>
+            <li><img src="dot.png" style="height: 18px;">Do not walk, swim or drive through flood waters. Turn Around.
+                Don’t Drown!</li>
+            <li><img src="dot.png" style="height: 18px;">Stay off bridges over fast-moving water. Fast-moving water can
+                wash bridges away without warning.</li>
+            <li><img src="dot.png" style="height: 18px;">Stay inside your car if it is trapped in rapidly moving water.
+                Get on the roof if water is rising inside
+                the car.
+            </li>
+            <li><img src="dot.png" style="height: 18px;">Get to the highest level if trapped in a building. Only get on
+                the roof if necessary and once there
+                signal for help. Do not climb into a closed attic to avoid getting trapped by rising floodwater.</li>
+        </ul>
+        <!-- </div>
+<div class="tips"> -->
+        <ul>
+            <li style="padding-top: 30px; padding-left: 35px;">
+                <strong style="font-size:20px;">Staying Safe After a Flood</strong>
+            </li>
+        </ul>
+
+        <img src="instruction3.png"
+            style="display:block;margin-left:auto;margin-right:auto;width:400px;height:350px;" />
+
+        <ul class="instruction1">
+            <li> <img src="dot.png" style="height: 18px;">Pay attention to authorities for information and instructions.
+                Return home only when authorities say it
+                is safe.</li>
+            <li><img src="dot.png" style="height: 18px;">Avoid driving except in emergencies.</li>
+            <li><img src="dot.png" style="height: 18px;">Wear heavy work gloves, protective clothing and boots during
+                clean up and use appropriate face coverings
+                or masks if cleaning mold or other debris.</li>
+            <li><img src="dot.png" style="height: 18px;">People with asthma and other lung conditions and/or immune
+                suppression should not enter buildings with
+                indoor water leaks or mold growth that can be seen or smelled.</li>
+            <li><img src="dot.png" style="height: 18px;">Be aware that snakes and other animals may be in your house.
+            </li>
+            <li><img src="dot.png" style="height: 18px;">Be aware of the risk of electrocution. Do not touch electrical
+                equipment if it is wet or if you are
+                standing in water. Turn off the electricity to prevent electric shock.</li>
+            <li><img src="dot.png" style="height: 18px;">Avoid wading in floodwater, which can be contaminated and
+                contain dangerous debris. Underground or
+                downed power lines can also electrically charge the water.</li>
+        </ul>
+    </div>
+
+
+    <!-- content gallery -->
+    <h2 class="content">🎥 Content Gallery</h2>
+<div class="contentmain">
+    <div class="content_galleryrow1">
+        <div class="most_disaster">
+
+            <img SRC="bone.png"
+                style="width: 140px; height: 140px;display: block;margin-left: auto;margin-right: auto;" />
+            <br />
+            <a href="deadliest_flood.html" target="_parent"><strong> Top 5 most Deadliest flood </strong></a>
+        </div>
+
+
+        <div class="why_flood">
+            <img src="detective.png"
+                style="width: 140px;height: 140px;display: block;margin-left: auto;margin-right: auto; margin-top: 11px;padding-bottom: 16px;" />
+            <a href="https://scijinks.gov/flood/#:~:text=Severe%20flooding%20is%20caused%20by,at%20risk%20for%20flash%20floods.&text=A%20flood%20is%20an%20overflow,land%20that%20is%20normally%20dry.l"
+                target="_parent"><strong> Causes of Flood</strong></a>
+
+        </div>
+
+        <div class="safety_measures">
+            <img src="safety.png"
+                style="width: 140px;height: 140px;display: block;margin-left: auto;margin-right: auto; margin-top: 11px;padding-bottom: 16px;" />
+            <a href="https://www.citywindsor.ca/residents/emergencyandcrimeprevention/emergency-preparedness/floods/pages/flood-precautions.aspx"
+                target="_parent"><strong>Safety measures for flood</strong></a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ----------------Box 2   2nd row  Content gallery k liye -->
+
+
+
+
+
+
+    <div class="content_galleryrow2">
+        <div class="helpline_support">
+
+            <img SRC="helpline_support.png"
+                style="width: 140px; height: 140px;display: block;margin-left: auto;margin-right: auto;padding-left: 60px;" />
+            <br />
+            <a href="support_center.html" target="_parent"><strong>Flood and Disaster
+                    Helpline</strong></a>
+        </div>
+
+
+        <div class="flood_alert">
+            <img src="flood_alert.png"
+                style="width: 140px;height: 140px;display: block;margin-left: auto;margin-right: auto; margin-top: 11px;padding-bottom: 16px;" />
+            <a href="https://www.ndtv.com/topic/flood-alert" target="_parent"><strong>Flood Alert</strong></a>
+
+        </div>
+
+        <div class="flood_risk_map">
+            <img src="flood_risk_map.png"
+                style="width: 130px;height: 130px;display: block;margin-left: auto;margin-right: auto; margin-top: 11px;padding-bottom: 16px;" />
+            <a href="https://vai.bmtpc.org/flood.html" target="_parent"><strong>Flood risk map</strong></a>
+
+        </div>
+
+
+    </div>
+</div>
+
+    <div class="flood_prone">
+        <img src="flood.png" style="width:50px;height:50px;transform:translateY(45px);display:block;margin-left:15px" />
+        <h3 class="floodpronetext">Flood Prones Areas In India</h3>
+
+        <img src="flood_prones.jpg"
+            style="width: 500px;height: 500px; display:block; margin-left:auto;margin-right: auto;" />
+    </div>
+    <details class="details">
+        <summary>About floods in India</summary>
+        <p>
+
+            India, being a peninsular country and surrounded by the Arabian Sea, Indian Ocean and the Bay of Bengal, is
+            quite prone to flood. As per the Geological Survey of India (GSI), the major flood prone areas of India
+            cover almost 12.5% area of the country.
+            <br />
+            <br />
+
+            Every year, flood, the most common disaster in India causes immense loss to the country's property and
+            lives.
+        </p>
+    </details>
+
+
+
+    <details class="details">
+        <summary>India Flood Prone Areas</summary>
+        <p>
+            The states falling within the periphery of "India Flood Prone Areas" are West Bengal, Orissa, Andhra
+            Pradesh, Kerala, Assam, Bihar, Gujrat, Uttar Pradesh, Haryana and Punjab. The intense monsoon rains from
+            southwest causes rivers like Brahmaputra, Ganga, Yamuna etc. to swell their banks, which in turn floods the
+            adjacent areas.
+            <br />
+            <br />
+
+
+          
+
+
+            Over the past few decades, central India has become familiar with precipitation events like torrential rains
+            and flash floods. The major flood prone areas in India are the river banks and deltas of Ravi,
+            Yamuna-Sahibi, Gandak, Sutlej, Ganga, Ghaggar, Kosi, Teesta, Brahmaputra, Mahanadi, Mahananda, Damodar,
+            Godavari, Mayurakshi, Sabarmati and their tributaries.
+        </p>
+        <h4>An over-view about state-wise flood prone areas can be gained by checking the following table</h4>
+
+        <table border="1" class="table">
+            <thead>
+                <tr>
+                    <td colspan="2" style="background-color:#68B984">state-wise Flood Prone areas</td>
+                </tr>
+                <tr style="background-color: rgb(91, 223, 223);">
+                    <td>state</td>
+                    <td>Area liable to floods(million Ha.)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Uttar Pradesh</td>
+                    <td>7.336</td>
+                </tr>
+
+                <tr>
+                    <td>Bihar</td>
+                    <td>4.26</td>
+                </tr>
+
+                <tr>
+                    <td>Punjab</td>
+                    <td>3.7</td>
+                </tr>
+
+                <tr>
+                    <td>himachal Pradesh</td>
+                    <td>0.23</td>
+                </tr>
+
+                <tr>
+                    <td>Rajasthan</td>
+                    <td>3.26</td>
+                </tr>
+
+                <tr>
+                    <td>Assam</td>
+                    <td>3.15</td>
+                </tr>
+
+                <tr>
+                    <td>west Bengal</td>
+                    <td>2.65</td>
+                </tr>
+
+                <tr>
+                    <td>Haryana</td>
+                    <td>2.35</td>
+                </tr>
+
+                <tr>
+                    <td>Orissa</td>
+                    <td>1.4
+                </tr>
+                </tr>
+
+                <tr>
+                    <td>Andhra Pradesh</td>
+                    <td>1.39</td>
+                </tr>
+
+                <tr>
+                    <td>Gujrat</td>
+                    <td>1.39</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+
+    <details class="details">
+        <summary>Highest flood prone areas in India</summary>
+        <p>
+            Though the north-Indian plains prone to flood more, the "India flood prone areas" can be broadly categorized
+            in three divisions:
+            <br />
+            <br />
+            Ganga Basin: The Ganga Basin gets flooded mostly in the northern part by its northern tributaries. The badly
+            affected states of the Ganga basin are West Bengal, Bihar and Uttar Pradesh. Besides the Ganga, rivers like
+            Sarada, Rapti, Gandak and Ghagra causes flood in eastern part of Uttar Pradesh. The Yamuna is famous for
+            flooding Haryana and Delhi. Bihar experiences massive dangerous flood every year. River Burhi, Bagmati,
+            Gandak, Kamla along with many small rivers contribute to that. In West Bengal, rivers like Mahananda,
+            Bhagirathi, Damodar, Ajay etc. causes floods because of tidal effects and insufficient river channels.
+            <br />
+            <br />
+
+            Brahmaputra and Barak Basins: The river banks of Brahmaputra and Barak gets flooded due to the Surplus water
+            found in the Brahmaputra basin and the Barak basin. These rivers along with their tributaries flood the
+            northeastern states like West Bengal, Assam and Sikkim. Jaldakha, Teesta and Torsa in northern West Bengal
+            and rivers in Manipur often overflow their banks.
+            <br />
+            <br />
+            Central India and Deccan Rivers Basin: In Orissa, spilling over of river banks by Mahanadi, Baitarni and
+            Brahmani causes havoc. The deltaic area formed by these three rivers is thickly populated. Even some small
+            rivers of Kerala and mud stream from the nearby hills add on to the destruction. Southern and central India
+            observes floods caused by Narmada, Godavari, Tapi, Krishna and Mahanadi due to heavy rainfall. Cyclonic
+            storms in the deltaic regions of Godavari, Mahanadi and Krishna even floods the coastal regions of Andhra
+            Pradesh, Orissa and Tamil Nadu occasionally.
+            <br />
+
+            Refer to the table given below to get an idea about the damage caused in the India flood prone areas:
+
+        </p>
+        <table border="2" class="table2">
+            <thead>
+                <tr style="background-color: rgb(0, 145, 255);color: white;">
+                    <td colspan="2">Average Annual Flood Damage (1953 - 1999)</td>
+                </tr>
+                <tr style="background-color: #BBE7FE;">
+                    <td>state</td>
+                    <td>Area liable to Floods
+                        (million Ha.)</td>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>Total Damage</td>
+                    <td>Rs.13,400 million</td>
+                </tr>
+
+                <tr>
+                    <td>Area Affected</td>
+                    <td> 8.11 million hectare</td>
+                </tr>
+                <tr>
+                    <td>Crop Area Affected</td>
+                    <td> 3.57 million hectare</td>
+                </tr>
+                <tr>
+                    <td>Human Lives Lost</td>
+                    <td>1579 Nos.
+                <tr>
+                    <td>Cattle Lost</td>
+                    <td> 95,000 Nos.</td>
+                </tr>
+            </tbody>
+            </thead>
+        </table>
+    </details>
+    <details class="details">
+        <summary>Emergency kit</summary>
+        <p>
+        <ul>
+            <li>Battery operated torch</li>
+            <li>Extra Battery</li>
+            <li>Battery operated Radio</li>
+            <li>First aid kit and essential medicines</li>
+            <li>Emergency Food(dry items) and water</li>
+            <li>Candles and matches in a waterproof container</li>
+            <li>Knife</li>
+            <li>Chlorine tablet </li>
+            <li>Important documents</li>
+            <li>Cash</li>
+            <li>Thick ropes and cords</li>
+            <li>Shoes</li>
+        </ul>
+        </p>
+    </details>
+
+  <div class="latest_news">
+    Latest News about Flood <br></div>
+   <div class="spa"> Discover what's going on around you @Defender and what's yet to come!</span>
+  </div>
+<div class="gridd">
+  <div class="grid">
+    <div class="featured-box">
+      <h2 style="font-family: 'Baloo Bhai 2', cursive;">Featured News</h2>
+      <p ><iframe style="border-radius: 10px;" width="560" height="315" src="https://www.youtube.com/embed/z_JoszniGHA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+      <p style="padding-left:10px;padding-right: 10px; padding-bottom: 15px; font-family: 'Baloo Bhai 2', cursive;">कुदरत जब कहर बरपाती है... तो पीछे तबाही के ऐसे ही निशान छोड़ जाती है...एकबार फिर <br>अमेरिका में तूफानी आफत कहर ढा रही है.. चारों तरफ तबाही का मंजर है... जिसकी तस्वीरें सामने आई.. अमेरिका से ये तस्वीरें कर रही है.</p>
+      <br>
+
+
+      <p><iframe  style="border-radius: 10px;"width="560" height="315" src="https://www.youtube.com/embed/74jSnS6wPb4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+    </div>
+    
+    
+    <div class="blog-box">
+     
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/96gi1XyrbyY?si=E1P7Lhjf8IdrPkSr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+      <p style="font-size: 15px;font-weight: bold; padding-left: 10px;padding-right: 10px;padding-bottom: 10px;padding-top: 10px;">Rising sea levels and devastating floods are wreaking havoc in Bangladesh. Water is destroying crops and homes. Largely as a result of global warming, residents are in a constant battle against flooding.</p>
+    </div>
+    <div class="blog-box">
+      
+      <p><iframe  style="border-radius: 10px;"width="350" height="215" src="https://www.youtube.com/embed/Dvm8q-8lHLU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+      <p style="font-size: 15px;font-weight: bold;padding: 10px;">Brazil Battles Floods & Landslides!Destructive Hailstorm Hits India\Disasters On March 19-20, 2023</p>
+    </div>
+    <div class="blog-box">
+      
+      <p><iframe  style="border-radius: 10px;"width="350" height="215" src="https://www.youtube.com/embed/h3bRb91hXe0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+      <p style="font-size: 15px;font-weight: bold;padding: 10px;">Weather blues continue in California as a storm in the U. state has prompted evacuations. The experts has warn of more floods, while the land is soaked under flood water, a state of emergency has been declared in 43 of California's 58 counties.  </p>
+    </div>
+    
+</div>
+</div>
+
+
+
+
+
+
+    <footer>
+
+        <div class="logo1">
+            <img style="align-items: center;" src="Defender_logo.png">
+        </div>
+        <div class="section">
+            <a href="About_us.htmll" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">About Us
+                &nbsp;&nbsp;|</a>
+            <a href="connect_with_us.html"
+                style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Helpdesk&nbsp;&nbsp;|</a>
+            <a href="connect_with_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Terms &
+                Conditions</a>
+        </div>
+        <small style="color: #9CA3AF;margin-left:520px ; padding-top: 50px;"> &copy;2023 Defender. All rights
+            reserved</small>
+
+        <p
+            style="color:white ; font-size: 18px ;word-spacing: 2px; margin-left: 440px;margin-top: 20px;padding-bottom: 15px;">
+            Website developed by Nirbhay ,Ashutosh & Yash</p>
+        
+
+    </footer>
+</body>
+<!-- <script> -->
+
+</script>
+
+</html>

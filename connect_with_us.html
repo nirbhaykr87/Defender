@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            
+            
+        }
+        
+        
+        nav{
+            background-color: rgba(37, 38, 65, 1);
+
+            height: 80px;    /*60 */
+            width: 100%;
+        }
+        .logo{
+            color: white;
+            font-size: 35px;
+            list-style: 8px;
+            padding:0 100px;
+            display:inline-block;
+            margin-left: -75px;
+            margin-top: -45px;
+
+        }
+        .logo img{
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 5px;
+            transform: translateY(-8px);
+          
+
+        }
+     
+        nav ul li a{
+            border-radius: 3px;
+            color:white;
+            padding: 15px;
+
+  position: relative;
+  font-size: 24px;
+
+
+        }
+        
+        .Donate {
+   background-color: #4CAF50;
+   
+   /* background-color: #F48C06;    */
+  color: #fff;
+  border: none;
+  padding: 10px 38px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight:bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transform:translateY(-8px);
+}
+.Donate:hover {
+  background-color: #3e8e41;
+  
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top:40px;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color:white;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1.2);
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+}
+.Donate a{
+    color: #fff;
+}
+
+.bg{
+    background-image: url("contact-Us-img.jpg");
+
+    background-size:cover;
+    background-repeat: no-repeat;
+     height: 250px;
+     
+     
+    width: 100%; 
+    
+  
+}
+span{
+    font-size: 60px;
+    text-align: left;
+  
+    position: relative;
+    top: 110px;
+    left: 40px;
+    font-family: 'Baloo 2', cursive;
+font-family: 'Baloo Bhai 2', cursive;
+/* color: #fff; */
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+color: rgb(46, 44, 44);
+
+}
+.overlay {
+  position: absolute; /* Set the position of the overlay to absolute */
+  top: 30;
+  left: 0;
+  width: 100%;
+  height: 46%;
+  background-color: rgba(255, 255, 255, 0.5); /* Set the background color to white with 50% opacity */
+}
+.form{
+    border: 2px solid #000000B3;
+    margin: 70px;
+}
+footer{
+  height: 200px;
+  margin-top: 90px;
+  background-color: rgba(37, 38, 65, 1);
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+
+
+}
+.logo1{
+            color: white;
+            font-size: 35px;
+            list-style: 8px;
+            padding:0 100px;
+            display:inline-block;
+            margin-left: 440px;
+            margin-top: -27px;
+
+        }
+        .logo1 img{
+            height: 190px;
+            width: 190px;
+            margin-top: -10px;
+        }
+        .section{
+          margin-left: 460px;
+          margin-top: -50px;
+          padding-bottom: 10px;
+          
+        }
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+
+    <div class="logo">
+        <img src="Defender_logo.png">
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wheather.html">Weather</a></li>
+        <li><a href="News_gallery.html">News Gallery</a></li>
+        <li><a href="support_center.html">Support Center</a></li>
+    <button  class="Donate"><a href="Donation.html" target="_blank">Donate</a></button>
+    
+    </ul>
+</nav>
+
+<div class="bg">
+    <div class="overlay"></div>
+  <span class="sp">Contact </span>
+</div>
+
+
+<p style="font-size: 25px; margin-left: 70px; margin-top: 20px; ">We want to hear from you! Please use the contact form below or <a  style="color: #3591AB;"href="mailto:nirbhaysawan8757@gmail.com?subject=Hello&body=Hi there,">email us directly</a>
+</p>
+
+
+<div class="form">
+    <h1 style="margin-left: 50px;color: #000000B3; margin-top: 10px;">Contact Us </h1>
+    <br>
+    <br>
+
+
+
+    <form action="connect.php" method="post">
+        <label for="Name" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Your Name</label><br>
+        <input type="text" id="Name" name="name" required style="width: 900px; margin-left: 50px; height: 30px;">
+        
+<br>
+<br>
+
+        <label for="email" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Your E-mail</label><br>
+        <input type="email" id="email" name="email" style="width: 900px; margin-left: 50px; height: 30px;">
+        <br>
+        <br>
+
+        <label for="message" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Your message</label><br>
+        
+        <textarea id="message" name="message"  rows="4" cols="50"style="width: 900px; margin-left: 50px; height: 30px;"></textarea>
+        <br>
+        <br>
+
+        <input type="submit"  style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px; color: #fff; background-color: #000000B3; border-radius: 5px; padding: 10px; margin-bottom: 40px; cursor: pointer;">
+        
+
+
+    </form>
+</div>
+
+
+<footer>
+  
+    <div class="logo1">
+      <img  style="align-items: center;" src="Defender_logo.png">
+  </div>
+  <div class="section">
+   <a href="About_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">About Us &nbsp;&nbsp;|</a>
+  <a href="connect_with_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Helpdesk&nbsp;&nbsp;|</a>
+  <a href="#" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Terms & Conditions</a>
+  </div>
+  <small style="color: #9CA3AF;margin-left:520px ; padding-top: 50px;" > &copy;2023 Defender. All rights reserved</small>
+  
+  <p style="color:white ; font-size: 18px ;word-spacing: 2px; margin-left: 440px;margin-top: 20px;padding-bottom: 15px;">Website developed by Nirbhay ,Ashutosh & Yash</p>
+  
+  </footer>
+  
+</body>
+
+
+</script>
+</html>

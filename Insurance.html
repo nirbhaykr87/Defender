@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+ * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+
+
+
+    }
+
+    nav {
+      background-color: rgba(37, 38, 65, 1);
+
+      height: 80px;
+      /*60 */
+      width: 100%;
+    }
+
+    .logo {
+      color: white;
+      font-size: 35px;
+      list-style: 8px;
+      padding: 0 100px;
+      display: inline-block;
+      margin-left: -75px;
+      margin-top: -45px;
+
+    }
+
+    .logo img {
+      height: 190px;
+      width: 190px;
+      margin-top: -10px;
+    }
+
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 5px;
+      transform: translateY(-8px);
+
+
+    }
+
+    nav ul li a {
+      border-radius: 3px;
+      color: white;
+      padding: 15px;
+
+      position: relative;
+      font-size: 24px;
+
+
+    }
+
+    .Donate {
+      background-color: #4CAF50;
+
+      /* background-color: #F48C06;    */
+      color: #fff;
+      border: none;
+      padding: 10px 38px;
+      border-radius: 25px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      transform: translateY(-8px);
+    }
+
+    .Donate:hover {
+      background-color: #3e8e41;
+
+    }
+
+    nav ul li a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 40px;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.3s cubic-bezier(0.5, 0, 0.1, 1.2);
+    }
+
+    nav ul li a:hover::before {
+      transform: scaleX(1);
+    }
+
+    .Donate a {
+      color: #fff;
+    }
+
+    .main {
+      border: 2x solid red;
+    }
+
+    .bg {
+      background-image: url("Insurance.png");
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 250px;
+      width: 100%;
+
+
+    }
+
+    span {
+      font-size: 60px;
+      text-align: left;
+      /* margin-top: 120px; */
+      position: relative;
+      top: 110px;
+      left: 40px;
+      font-family: 'Baloo 2', cursive;
+      font-family: 'Baloo Bhai 2', cursive;
+      /* color: #fff; */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      color: rgb(46, 44, 44);
+
+    }
+
+    .overlay {
+      position: absolute;
+      /* Set the position of the overlay to absolute */
+      top: 30;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      /* Set the background color to white with 50% opacity */
+    }
+
+    .helpmain {
+      /* border: 2px solid red; */
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .helpimg {
+      margin-top: 50px;
+      margin-left: 80px;
+      display: inline;
+
+
+    }
+
+    .helptext {
+      /* border: 2px solid blue; */
+      display: inline;
+      float: right;
+      font-size: 16px;
+      padding-left: 20px;
+      margin-top: 36px;
+      margin-right: 200px;
+
+
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .helptext a {
+      font-size: 16px;
+      background-color: #000000B3;
+      color: #fff;
+      padding: 16px 28px;
+      border-radius: 4px;
+      font-weight: 800;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .helptext a:hover {
+      background-color: #424040b3;
+      color: #000000B3;
+    }
+
+
+    .box {
+      width: 300px;
+      background-color: #EEEEEE;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      display: inline;
+      float: left;
+      margin-left: 40px;
+      margin-top: 20px;
+
+
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .box p {
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .box a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .box a:hover {
+      text-decoration: underline;
+    }
+
+
+
+    .box1 {
+      width: 300px;
+      background-color: #EEEEEE;
+
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      display: inline;
+      float: left;
+      margin-left: 30px;
+      margin-top: 20px;
+
+    }
+
+    .box1 h2 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .box1 p {
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .box1 a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .box1 a:hover {
+      text-decoration: underline;
+    }
+
+
+    .box2 {
+      width: 300px;
+      background-color: #EEEEEE;
+
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      display: inline;
+      float: left;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+
+    .box2 h2 {
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .box2 p {
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .box2 a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .box2 a:hover {
+      text-decoration: underline;
+    }
+
+    .Helplinenum {
+      border: 1px dotted gray;
+      margin-top: 320px;
+      margin-left: 30px;
+      font-size: 19px;
+      padding-left: 15px;
+      background-color: #EEEEEE;
+      padding-top: 10px;
+
+
+    }
+
+    footer {
+      height: 200px;
+      margin-top: 90px;
+      background-color: rgba(37, 38, 65, 1);
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 10px;
+
+
+    }
+
+    .logo1 {
+      color: white;
+      font-size: 35px;
+      list-style: 8px;
+      padding: 0 100px;
+      display: inline-block;
+      margin-left: 440px;
+      margin-top: -27px;
+
+    }
+
+    .logo1 img {
+      height: 190px;
+      width: 190px;
+      margin-top: -10px;
+    }
+
+    .section {
+      margin-left: 460px;
+      margin-top: -50px;
+      padding-bottom: 10px;
+
+    }
+    .form{
+    border: 2px solid #000000B3;
+    margin: 70px;
+    /* background-color: #ECEDF3; */
+   
+
+    
+
+}
+#helptext:hover {
+          background-color: #424040b3;
+          color: #000000B3;
+}
+    </style>
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+          <img src="Defender_logo.png">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wheather.html">Weather</a></li>
+          <li><a href="News_gallery.html">News Gallery</a></li>
+          <li><a href="support_center.html">Support Center</a></li>
+          <button class="Donate"><a href="Donation.html" target="_blank">Donate</a></button>
+    
+        </ul>
+      </nav>
+
+      <div class="bg">
+        <!-- <div class="overlay"></div> -->
+        <!-- <span class="sp">Support Center</span> -->
+      </div>
+
+     
+ 
+<div class="form" >
+    
+        <h1 style="margin-left: 50px;color: #000000B3; margin-top: 10px;">Insurance Details </h1>
+        <br>
+        <br>
+    <form action="flood_insurance.php" method="post">
+        <div class="form-group">
+          <label for="name" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Name:</label> <br>
+          <input type="text" id="name" name="name" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>  <br>
+        </div>
+        <div class="form-group">
+          <label for="email" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Email:</label> <br>
+          <input type="email" id="email" name="email" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="phone" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Phone:</label> <br>
+          <input type="tel" id="phone" name="phone" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="dob" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Date of Birth:</label> <br>
+          <input type="date" id="dob" name="dob" required style="width: 900px; margin-left: 50px; height: 30px;"> <br> <br>
+        </div>
+        <div class="form-group">
+          <label for="gender" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Gender:</label> <br>
+          <select id="gender" name="gender" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>
+            <option value="">--Please select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="coverage" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Amount of Coverage:</label> <br>
+          <select id="coverage" name="coverage" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>
+            <option value="">--Please select--</option>
+            <option value="50k">$50,000</option>
+            <option value="100k">$100,000</option>
+            <option value="250k">$250,000</option>
+            <option value="500k">$500,000</option>
+            <option value="1m">$1,000,000</option>
+            <option value="other">Other</option>
+          </select>
+          <br> <br>
+        </div>
+        <div class="form-group">
+          <label for="term" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Term Length:</label> <br>
+          <select id="term" name="term" required style="width: 900px; margin-left: 50px; height: 30px;"> <br>
+            <option value="">--Please select--</option>
+            <option value="10y">10 years</option>
+            <option value="20y">20 years</option>
+            <option value="30y">30 years</option>
+            <option value="other">Other</option>
+          </select>
+          <br>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="smoker"  style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Do you smoke?</label>   
+          <div class="radio-group" style="width: 900px; margin-left: 50px; height: 30px;  margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">
+            <input type="radio" id="yes" name="smoker" value="yes" required > 
+            <label for="yes" >Yes</label> 
+            <input type="radio" id="no" name="smoker" value="no" required > 
+            <label for="no" >No</label> 
+          </div>
+          <br>
+        </div>
+        <div class="form-group" >
+          <label for="conditions" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Have you been diagnosed with any medical conditions in the past 5 years?</label>  <br> <br>
+          <div class="radio-group" style="width: 900px; margin-left: 50px; height: 30px; ;">
+            <input type="radio" id="yes-conditions" name="conditions" value="yes" required > 
+            <label for="yes-conditions" style="font-weight:bold ; font-size: 22px;margin-top: 20px;" >Yes</label> 
+            <input type="radio" id="no-conditions" name="conditions" value="no" required > 
+            <label for="no-conditions"  style="font-weight:bold ; font-size: 22px;margin-top: 20px;">No</label> 
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="condition-description" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">If yes, please describe:</label> <br>
+          
+          <textarea  name="condition_description"  rows="4" cols="50"style="width: 900px; margin-left: 50px; height: 30px;"></textarea>
+        </div>
+          <br>
+          <label for="adhar_card" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Upload your Aadhar Card</label> <br>
+        <input type="file" style="font-weight:700px ; font-size: 22px;margin-top: 20px; margin-left: 50px;">
+          <br>
+          <label for="pan_card" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px;">Upload your Pan Card</label> <br>
+        <input type="file" style="font-weight:700px ; font-size: 22px;margin-top: 20px; margin-left: 50px;">
+          <br>
+          <input type="submit"  style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px; color: #fff; background-color: #000000B3; border-radius: 5px; padding: 10px; margin-bottom: 40px; cursor: pointer;">
+          <!-- <input type="submit"  onclick="href=""" style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px; color: #fff; background-color: #000000B3; border-radius: 5px; padding: 10px; margin-bottom: 40px; cursor: pointer;"> -->
+          <a href="showdata.php"  style="margin-left: 50px;font-weight:bold ; font-size: 22px;margin-top: 20px; color: #fff; background-color: #000000B3; border-radius: 5px; padding: 10px; margin-bottom: 40px; cursor: pointer; " id="helptext"> Enrolled People</a>
+        </div>
+       
+        
+
+      <footer>
+
+        <div class="logo1">
+          <img style="align-items: center;" src="Defender_logo.png">
+        </div>
+        <div class="section">
+          <a href="About_us.html" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">About Us &nbsp;&nbsp;|</a>
+          <a href="connect_with_us.html"
+            style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Helpdesk&nbsp;&nbsp;|</a>
+          <a href="#" style="color: #9CA3AF; font-weight: bold; font-family: 30px;">Terms & Conditions</a>
+        </div>
+        <small style="color: #9CA3AF;margin-left:520px ; padding-top: 50px;"> &copy;2023 Defender. All rights
+          reserved</small>
+    
+        <p
+          style="color:white ; font-size: 18px ;word-spacing: 2px; margin-left: 455px;margin-top: 20px;margin-bottom: 15px;">
+          Website developed by Nirbhay & Kartik</p>
+    
+      </footer>
+    
+</body>
+</html>
