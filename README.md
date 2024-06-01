@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/Defender_logo.png" alt="Defender Logo" width="200">
+  <img src="images/Defender_logo.png" alt="Defender Logo" height="250">
 </p>
 
 <h1 align="center">Defender: Flood Management Website 🌧️🌊</h1>
