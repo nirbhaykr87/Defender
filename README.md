@@ -48,4 +48,4 @@ For any questions or feedback, please open an issue on the repository or contact
 
 ---
 
-<p align="center">Happy Coding! 🎉</p>
+<p align="center">Stay Safe, Stay Informed! 🌈</p>
